@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15-maktab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Umumiy reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: rgba(44, 62, 80, 0.9); /* Tungi rasmiy fon */
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out; /* Header hover effekti */
+    }
+
+    header:hover {
+      background-color: rgba(44, 62, 80, 1); /* Hoverda fon o'zgaradi */
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.3s; /* Hover effekti */
+    }
+
+    nav ul li a:hover {
+      color: #f39c12; /* Oltin rangda hover */
+      transform: scale(1.1); /* Hoverda kattalashadi */
+    }
+
+    /* Asosiy kontent */
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+      transform: scale(1); /* Sekin o'zgarishi */
+    }
+
+    section:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover effektida box-shadow o'zgaradi */
+      transform: scale(1.03); /* Hoverda kengayadi */
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #34495e;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+    }
+
+    section:hover h2 {
+      color: #f39c12; /* Hoverda sarlavha rangi o'zgaradi */
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Yangiliklar ro'yxati */
+    ul li {
+      margin-bottom: 12px;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      transform: translateX(10px); /* Yangiliklar ro'yxati hover effekti */
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: -20px;
+      top: 0;
+      color: #f39c12; /* Oltin rang */
+      font-size: 1.4rem;
+    }
+
+    /* Aloqa bo'limi */
+    footer {
+      background-color: rgba(44, 62, 80, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1rem;
+      transition: background-color 0.3s ease-in-out; /* Footer hover effekti */
+    }
+
+    footer:hover {
+      background-color: rgba(44, 62, 80, 1); /* Hoverda fon o'zgaradi */
+    }
+
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsivlik uchun CSS */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+
+      section p {
+        font-size: 0.9rem;
+      }
+
+      ul li::before {
+        left: -15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>15-maktab</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Bosh sahifa</a></li>
+        <li><a href="#about">Biz haqimizda</a></li>
+        <li><a href="#news">Yangiliklar</a></li>
+        <li><a href="#contact">Aloqa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Bizning Maktab manzili</h2>
+    <p><a href="https://maps.app.goo.gl/uYvAMSRcGRCDmthb9" target="_blank">Farg'na viloyati O'zbekiston tumani Qozayoz bobo qishlog'i coca cola marketi yonida</a></p>
+  </section>
+
+  <section id="about">
+    <h2>Biz haqimizda</h2>
+    <p>15-maktab 1939-yilda tashkil etilgan. Maktabda zamonaviy ta'lim metodlari va texnologiyalaridan foydalaniladi. Maktabimizda 920 o'quvchi ta'lim oladi.</p>
+  </section>
+
+  <section id="news">
+    <h2><a href="https://t.me/+X8a4EnY8hzA0MjE6">Yangiliklar</a></h2>
+    <ul>
+      <li>Yangi o'quv yili boshlandi!</li>
+      <li>Sport festivali zakovatlar, tadbirlar, bayramlar bo'lib o'tadi.</li>
+      <li>O'quvchilarga qanday kitoblar kerak bo'lsa kutub-xonadan olishi yoki kutub-xonada o'qishi mumkun</li>
+      <li>Bizning maktabda xar-xil fanlardan kurslar t'garaklar bo'lib o'tadi</li>
+      <li>Bizning kurslar o'quvchilar dars vaqtiga qarab bo'ladi</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Aloqa</h2>
+    <p>Email: <a href="xolmatovelyor139@gmail.com">Maktabimiz emaili</a></p>
+    <p>Telefon: +998 99 497 23 56</p>
+	<p>Telefon: +998 97 204 97 47</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 15-maktab. Barcha huquqlar himoyalangan. <a href="mailto:info@15school.uz">Biz bilan bog'laning</a></p>
+  </
